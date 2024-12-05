@@ -8,20 +8,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            Image.asset(
-              "assets/images/login_img.png",
-              fit: BoxFit.cover,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              "Welcome Back",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+        body: SingleChildScrollView(
           child: Column(
             children: [
               Image.asset(
