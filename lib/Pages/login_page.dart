@@ -8,6 +8,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String name = "";
+  bool changeButton = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,20 +64,51 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 30,
               ),
-              ElevatedButton(
-                onPressed: () {
+              InkWell(
+                onTap: () async {
+                  setState(() {
+                    changeButton = true;
+                  });
+                  await Future.delayed(Duration(seconds: 1));
                   Navigator.pushNamed(context, MyRoutes.homeRoute);
                 },
-                child: Text(
-                  "Login",
-                  style: TextStyle(color: Colors.white),
+                child: AnimatedContainer(
+                  duration: Duration(seconds: 1),
+                  width: changeButton ? 50 : 150,
+                  height: 50,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      borderRadius:
+                          BorderRadius.circular(changeButton ? 50 : 8)),
+                  child: changeButton
+                      ? Icon(
+                          Icons.done,
+                          color: Colors.white,
+                        )
+                      : Text(
+                          "Login",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold),
+                        ),
                 ),
-                style: TextButton.styleFrom(
-                    shadowColor: Colors.green,
-                    backgroundColor: Colors.deepPurple,
-                    elevation: 1.5,
-                    minimumSize: Size(150, 40)),
               )
+              // ElevatedButton(
+              //   onPressed: () {
+              //     Navigator.pushNamed(context, MyRoutes.homeRoute);
+              //   },
+              //   child: Text(
+              //     "Login",
+              //     style: TextStyle(color: Colors.white),
+              //   ),
+              //   style: TextButton.styleFrom(
+              //       shadowColor: Colors.green,
+              //       backgroundColor: Colors.deepPurple,
+              //       elevation: 1.5,
+              //       minimumSize: Size(150, 40)),
+              // )
             ],
           ),
         ));
