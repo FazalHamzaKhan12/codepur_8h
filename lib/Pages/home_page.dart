@@ -9,10 +9,10 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.yellow,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("New App"),
+        title: const Text("New App"),
         backgroundColor: Colors.blue,
       ),
-      body: Center(child: Text("Welcome To Hamza")),
+      body: const Center(child: Text("Welcome To Hamza")),
     );
   }
 }
