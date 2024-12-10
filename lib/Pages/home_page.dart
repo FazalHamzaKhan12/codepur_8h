@@ -1,3 +1,4 @@
+import 'package:codepur_8h/Widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: const Center(child: Text("Welcome To Hamza")),
+      drawer: MyDrawer(),
     );
   }
 }

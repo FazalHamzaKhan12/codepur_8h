@@ -6,9 +6,9 @@ import 'package:codepur_8h/Utiitz/routes.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: "/login",
+    initialRoute: "/homeRoute",
     routes: {
-      "/": (context) => LoginPage(),
+      "/": (context) => HomePage(),
       MyRoutes.homeRoute: (context) => const HomePage(),
       MyRoutes.loginRoute: (context) => LoginPage(),
     },
