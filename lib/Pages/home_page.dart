@@ -7,11 +7,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow,
       appBar: AppBar(
         centerTitle: true,
         title: const Text("New App"),
-        backgroundColor: Colors.blue,
       ),
       body: const Center(child: Text("Welcome To Hamza")),
       drawer: MyDrawer(),
