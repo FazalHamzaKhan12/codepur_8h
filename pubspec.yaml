@@ -64,6 +64,7 @@ flutter:
     - assets/images/myprofile.png
     - assets/images/whiteYoutube.png
     - assets/images/linkedinwhite.png
+    - assets/files/
 
 
   #   - images/a_dot_ham.jpeg
