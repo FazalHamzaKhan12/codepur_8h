@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Catalog"),
+        title: Text("Catgadflog"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
