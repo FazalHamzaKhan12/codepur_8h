@@ -12,9 +12,9 @@ void main() {
     debugShowCheckedModeBanner: false,
     initialRoute: MyRoutes.homeRoute  ,
     routes: {
-      "/": (context) => HomePage(),
-      MyRoutes.homeRoute: (context) =>  HomePage(),
-      MyRoutes.loginRoute: (context) => LoginPage(),
+      "/": (context) => const HomePage(),
+      MyRoutes.homeRoute: (context) =>  const HomePage(),
+      MyRoutes.loginRoute: (context) => const LoginPage(),
     },
   ));
 }
