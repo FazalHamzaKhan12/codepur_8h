@@ -1,7 +1,7 @@
 # codepur_8h
 
-A new Flutter project.
-
+I just completed the 8-hour Flutter course by Codepur on YouTube, and it was amazing!
+Learned so much about Flutter basics and building apps. Highly recommend it to anyone starting out!
 ## Getting Started
 
 This project is a starting point for a Flutter application.
