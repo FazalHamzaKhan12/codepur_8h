@@ -7,7 +7,7 @@ import 'package:codepur_8h/Utiitz/routes.dart';
 
 void main() {
   runApp(MaterialApp(
-    themeMode: ThemeMode.light,
+    themeMode: ThemeMode.system,
     theme: MyTheme.lightTheme,
     darkTheme: MyTheme.darkTheme,
     debugShowCheckedModeBanner: false,
