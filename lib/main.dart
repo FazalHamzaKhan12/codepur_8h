@@ -1,3 +1,4 @@
+import 'package:codepur_8h/Pages/cart_page.dart';
 import 'package:codepur_8h/Pages/home_page.dart';
 import 'package:codepur_8h/Pages/login_page.dart';
 import 'package:codepur_8h/Widgets/themes.dart';
@@ -15,6 +16,7 @@ void main() {
       "/": (context) => const HomePage(),
       MyRoutes.homeRoute: (context) =>  const HomePage(),
       MyRoutes.loginRoute: (context) => const LoginPage(),
+      MyRoutes.cartPage: (context) => const CartPage(),
     },
   ));
 }

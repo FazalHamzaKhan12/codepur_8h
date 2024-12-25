@@ -23,7 +23,7 @@ class DetailHomepage extends StatelessWidget {
                     backgroundColor: WidgetStateProperty.all(Colors.black87),
                     shape: WidgetStateProperty.all(const StadiumBorder())
                 ),
-                child: "Buy".text.color(Colors.white).make()).wh(100, 50)
+                child: "Add to cart".text.color(Colors.white).make()).wh(120, 50)
           ],
         ).p32(),
       ),
@@ -49,6 +49,7 @@ class DetailHomepage extends StatelessWidget {
                       catalog.desc.text.xl
                           .textStyle(context.captionStyle)
                           .make(),
+                      "this is an iphone all are good things this only dummy text i will add to this so it good like better result idk why i write this faltu english".text.textStyle(context.captionStyle).size(15).make().p16()
                     ],
                   ).p64(),
                 ),
